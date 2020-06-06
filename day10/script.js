@@ -12,6 +12,9 @@ function togglePlay() {
     } else {
         video.pause();
     }
+    if(this.requestFullscreen) {
+        this.requestFullscreen();
+    }
 }
 
 function updateButton() {
